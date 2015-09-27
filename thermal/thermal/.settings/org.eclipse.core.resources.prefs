@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/spring/mvc/dao/Impl/AbstractDAOImpl.java=UTF-8
+encoding//src/main/java/com/spring/mvc/dao/Impl/DataDAOImpl.java=UTF-8
+encoding//src/main/java/com/spring/mvc/dao/Impl/PropertyDAOImpl.java=UTF-8
+encoding//src/main/java/com/spring/mvc/dao/Impl/SubstanceDAOImpl.java=UTF-8
+encoding//src/main/java/com/spring/mvc/domainClasses/Constants_of_Substance.java=UTF-8
+encoding//src/main/java/com/spring/mvc/domainClasses/Data.java=UTF-8
+encoding//src/main/java/com/spring/mvc/domainClasses/Data_Source.java=UTF-8
+encoding//src/main/java/com/spring/mvc/domainClasses/Dimension.java=UTF-8
+encoding//src/main/java/com/spring/mvc/domainClasses/Environmental_Condition.java=UTF-8
+encoding//src/main/java/com/spring/mvc/domainClasses/Numerical_Data.java=UTF-8
+encoding//src/main/java/com/spring/mvc/domainClasses/Property.java=UTF-8
+encoding//src/main/java/com/spring/mvc/domainClasses/State.java=UTF-8
+encoding//src/main/java/com/spring/mvc/domainClasses/Substance.java=UTF-8
+encoding//src/main/java/com/spring/mvc/domainClasses/Uncertainty.java=UTF-8
+encoding//src/main/java/com/spring/mvc/web/listOfDataController.java=UTF-8
+encoding//src/main/webapp/WEB-INF/views/home.jsp=UTF-8

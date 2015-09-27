@@ -1,0 +1,12 @@
+<web-app> 
+    <description>Gosnow project</description>
+    <display-name>Gosnow</display-name>
+
+
+   <welcome-file-list>
+    <welcome-file>qudtclass.jsp</welcome-file>
+   </welcome-file-list>
+   
+   
+     
+</web-app>

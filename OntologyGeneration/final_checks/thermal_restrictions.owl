@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:qudt="http://data.nasa.gov/qudt/owl/qudt#"
+    xmlns="http://thermal_restriction#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <owl:Ontology rdf:about="http://data.qudt.org/qudt/owl/1.0.0/qudt.owl"/>
+  <owl:Class rdf:about="http://thermal_restriction#_thermal_EnthalpyOfVaporization__thermal_KiloJoulePerMolecatcher">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:allValuesFrom>
+              <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                  <owl:Restriction>
+                    <owl:hasValue rdf:resource="http://thermal#EnthalpyOfVaporization"/>
+                    <owl:onProperty>
+                      <owl:ObjectProperty rdf:about="http://data.nasa.gov/qudt/owl/qudt#quantityKind"/>
+                    </owl:onProperty>
+                  </owl:Restriction>
+                  <owl:Class rdf:about="http://data.nasa.gov/qudt/owl/qudt#Quantity"/>
+                </owl:intersectionOf>
+              </owl:Class>
+            </owl:allValuesFrom>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="http://data.nasa.gov/qudt/owl/qudt#valueQuantity"/>
+            </owl:onProperty>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:hasValue rdf:resource="http://thermal#KiloJoulePerMole"/>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="http://data.nasa.gov/qudt/owl/qudt#unit"/>
+            </owl:onProperty>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://thermal_restriction#_thermal_EnthalpyOfVaporization__thermal_KiloJoulePerMolevalidator"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://data.nasa.gov/qudt/owl/qudt#Quantity">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://data.nasa.gov/qudt/owl/qudt#quantityKind"/>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://data.nasa.gov/qudt/owl/qudt#QuantityKind"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://data.nasa.gov/qudt/owl/qudt#quantityValue"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://data.nasa.gov/qudt/owl/qudt#QuantityValue"/>
+        </owl:allValuesFrom>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >a reference to the dimension that quantifies the property</rdfs:comment>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://data.nasa.gov/qudt/owl/qudt#quantityValue"/>
+        </owl:onProperty>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://data.nasa.gov/qudt/owl/qudt#Thing"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Quantity</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A quantity is the measurement of an observable property of a particular object, event, or physical system. A quantity is always associated with the context of measurement (i.e. the thing measured, the measured value, the accuracy of measurement, etc.) whereas the underlying quantity kind is independent of any particular measurement. Thus, length is a quantity kind while the height of the Ares I rocket is a specific quantity of length; its magnitude that may be expressed in meters, feet, inches, etc. Examples of physical quantities include physical constants, such as the speed of light in a vacuum, Planck's constant, the electric permittivity of free space, and the fine structure constant.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://thermal_restriction#_thermal_StandardEntropy__data_nasa_gov_qudt_owl_unit_JoulePerMoleKelvincatcher">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:allValuesFrom>
+              <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                  <owl:Restriction>
+                    <owl:hasValue rdf:resource="http://thermal#StandardEntropy"/>
+                    <owl:onProperty rdf:resource="http://data.nasa.gov/qudt/owl/qudt#quantityKind"/>
+                  </owl:Restriction>
+                  <owl:Class rdf:about="http://data.nasa.gov/qudt/owl/qudt#Quantity"/>
+                </owl:intersectionOf>
+              </owl:Class>
+            </owl:allValuesFrom>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="http://data.nasa.gov/qudt/owl/qudt#valueQuantity"/>
+            </owl:onProperty>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:hasValue rdf:resource="http://data.nasa.gov/qudt/owl/unit#JoulePerMoleKelvin"/>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="http://data.nasa.gov/qudt/owl/qudt#unit"/>
+            </owl:onProperty>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://thermal_restriction#_thermal_StandardEntropy__data_nasa_gov_qudt_owl_unit_JoulePerMoleKelvinvalidator"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://data.nasa.gov/qudt/owl/qudt#QuantityValue">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://data.nasa.gov/qudt/owl/qudt#unit"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://data.nasa.gov/qudt/owl/qudt#valueQuantity"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://data.nasa.gov/qudt/owl/qudt#Quantity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="http://data.nasa.gov/qudt/owl/qudt#numericValue"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="http://data.nasa.gov/qudt/owl/qudt#standardUncertainty"/>
+        </owl:onProperty>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://data.nasa.gov/qudt/owl/qudt#Thing"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://data.nasa.gov/qudt/owl/qudt#unit"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://data.nasa.gov/qudt/owl/qudt#Unit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://data.nasa.gov/qudt/owl/qudt#valueQuantity"/>
+        </owl:onProperty>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="http://data.nasa.gov/qudt/owl/qudt#relativeStandardUncertainty"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://data.nasa.gov/qudt/owl/qudt#standardUncertainty"/>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Quantity value</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A quantity value expresses the numerical value of a quantity with respect to a chosen unit of measure. For example, the value of Planck's constant in Joule-Seconds (J s) is approximately 6.62606896E-34, whereas the value in Erg-Seconds (erg s) is approximately 6.62606896E-27.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://data.nasa.gov/qudt/owl/qudt#relativeStandardUncertainty"/>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://data.nasa.gov/qudt/owl/qudt#QuantityKind">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://data.nasa.gov/qudt/owl/qudt#generalization"/>
+        </owl:onProperty>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://data.nasa.gov/qudt/owl/qudt#generalization"/>
+        <owl:allValuesFrom rdf:resource="http://data.nasa.gov/qudt/owl/qudt#QuantityKind"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://data.nasa.gov/qudt/owl/qudt#Thing"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Quantity Kind</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A Quantity Kind is an aspect common to mutually comparable quantities.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://thermal_restriction#_thermal_StandardEntropy__data_nasa_gov_qudt_owl_unit_JoulePerMoleKelvinvalidator">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class>
+            <owl:withRestrictions rdf:parseType="Collection">
+              <rdf:Description rdf:about="http://thermal_restriction#_thermal_StandardEntropy__data_nasa_gov_qudt_owl_unit_JoulePerMoleKelvin_range">
+                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+                >1000</xsd:maxInclusive>
+                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+                >0</xsd:minInclusive>
+              </rdf:Description>
+            </owl:withRestrictions>
+            <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+          </owl:Class>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="http://data.nasa.gov/qudt/owl/qudt#numericValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <!--rdfs:subClassOf rdf:resource="http://data.nasa.gov/qudt/owl/qudt#QuantityValue"/-->
+  </owl:Class>
+  <owl:Class rdf:about="http://thermal_restriction#_thermal_EnthalpyOfVaporization__thermal_KiloJoulePerMolevalidator">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class>
+            <owl:withRestrictions rdf:parseType="Collection">
+              <rdf:Description rdf:about="http://thermal_restriction#_thermal_EnthalpyOfVaporization__thermal_KiloJoulePerMole_range">
+                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+                >10000</xsd:maxInclusive>
+                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+                >0</xsd:minInclusive>
+              </rdf:Description>
+            </owl:withRestrictions>
+            <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+          </owl:Class>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="http://data.nasa.gov/qudt/owl/qudt#numericValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <!--rdfs:subClassOf rdf:resource="http://data.nasa.gov/qudt/owl/qudt#QuantityValue"/-->
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://data.nasa.gov/qudt/owl/qudt#quantityValue">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://data.nasa.gov/qudt/owl/qudt#valueQuantity"/>
+    </owl:inverseOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >quantity value</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://data.nasa.gov/qudt/owl/qudt#unit">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://data.nasa.gov/qudt/owl/qudt#unitFor"/>
+    </owl:inverseOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >unit</rdfs:label>
+    <rdfs:comment>A reference to the unit of measure of a quantity (variable or constant) of interest.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://data.nasa.gov/qudt/owl/qudt#valueQuantity">
+    <owl:inverseOf rdf:resource="http://data.nasa.gov/qudt/owl/qudt#quantityValue"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >value for quantity</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://data.nasa.gov/qudt/owl/qudt#numericValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >numeric value</rdfs:label>
+  </owl:DatatypeProperty>
+</rdf:RDF>

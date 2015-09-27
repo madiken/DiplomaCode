@@ -1,0 +1,5 @@
+<http://localhost:2020/SubstanceConstant/3445> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#SubstanceConstant> .
+<http://localhost:2020/SubstanceConstant/3445> <http://data.nasa.gov/qudt/owl/qudt#quantityKind> <http://localhost:2020/Property/37> .
+
+<http://localhost:2020/Data/61> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#GasData> .
+<http://localhost:2020/Data/61> <http://data.nasa.gov/qudt/owl/qudt#quantityKind> <http://localhost:2020/Property/37> .

@@ -1,0 +1,10 @@
+<http://localhost:2020/Dimension/25> <http://data.nasa.gov/qudt/owl/qudt#quantityKind> <http://localhost:2020/Property/42> .
+<http://localhost:2020/Property/42> <http://www.w3.org/2002/07/owl#sameAs> <http://thermal#EnthalpyOfVaporization> .
+<http://localhost:2020/Dimension/25> <http://www.w3.org/2002/07/owl#sameAs> <http://thermal#KiloJoulePerMole> .
+
+<http://localhost:2020/Data/62> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#Data> .
+<http://localhost:2020/Data/62> <http://data.nasa.gov/qudt/owl/qudt#quantityKind> <http://localhost:2020/Property/42> .
+<http://localhost:2020/DataValue/62> <http://data.nasa.gov/qudt/owl/qudt#valueQuantity> <http://localhost:2020/Data/62> .
+<http://localhost:2020/DataValue/62> <http://data.nasa.gov/qudt/owl/qudt#unit> <http://localhost:2020/Dimension/25> .
+<http://localhost:2020/DataValue/62> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.nasa.gov/qudt/owl/qudt#QuantityValue> .
+<http://localhost:2020/DataValue/62> <http://data.nasa.gov/qudt/owl/qudt#numericValue> "100000.0E0"^^<http://www.w3.org/2001/XMLSchema#double> .

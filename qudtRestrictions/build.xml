@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="Qudt Restrictions project" default="deploy" basedir=".">
+  
+  <xmlproperty file="build_properties.xml" keepRoot="false" semanticAttributes="true"/>
+  <property name="project" value="gosnow"/>
+  <property name="jarname" value="gosnowclasses.jar"/>
+  <property name="warname" value="gosnow.war"/>
+  <property name="src" location="source"/>
+  <property name="bin" location="bin"/>
+  <property name="web" location="web"/>
+  <property name="lib" location="lib"/>
+  <property name="build_dir" location="build"/>
+  <property name="deploy_dir" location="C:\JBoss\standalone\deployments\\"/>
+	  
+  <!--property name="driver_dir" location="lib"/-->
+  <!--property name="driver_name" value="postgresql-9.1-901.jdbc4.jar"/-->
+  <!--property name="driver_class" value="org.postgresql.Driver"/-->
+  <!--property name="base_url" value="jdbc:postgresql://localhost:5432"/-->
+  <!--property name="script_dir" value="db"/>
+  <property name="init_script" value="init.sql"/-->
+     
+  <!--path id="jdbc_driver">
+    <pathelement location="${driver_dir}/${driver_name}"/>
+  </path-->
+  
+   <path id="antclasspath"> 
+    <fileset dir="${lib}" includes="**/*.jar"/>
+   </path>   
+    
+  <target name="deploy" depends="build">
+    <copy todir="${deploy_dir}">
+      <fileset file="${build_dir}/${warname}"/>
+    </copy>
+      <touch><fileset file="${deploy_dir}/${warname}.dodeploy" /></touch>
+  </target>
+
+  <target name="clean">
+  	<delete>
+  	  <fileset dir="${build_dir}" />
+  	</delete>
+  </target>
+	
+  <target name="build">
+  	<antcall target="clean" />
+    <copy todir="${build_dir}/${project}/">
+      <fileset dir="${web}"/>
+    </copy>
+     
+    <javac srcdir="${src}" destdir="${bin}" includeantruntime="false" source="1.6" classpathref="antclasspath"/>
+    <jar destfile="${build_dir}/${project}/WEB-INF/lib/${jarname}" basedir="bin"/>
+      <jar destfile="${build_dir}/${warname}" basedir="${build_dir}/${project}"/>
+  </target>
+  
+  <!--target name="base_init">
+    <sql driver="${driver_class}" url="${base_url}/ctalive_base" userid="${base_user_name}" password="${base_user_password}">
+      <classpath refid="jdbc_driver"/>
+      <transaction src="${script_dir}/${init_script}"/>      
+    </sql>
+  </target-->
+
+</project>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

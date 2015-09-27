@@ -1,0 +1,21 @@
+bin/
+.settings/
+.classpath
+.buildpath
+.loadpath
+.DS_Store
+local.properties
+build/*
+${deploy_dir}
+*sublime*
+
+# Ant #
+############
+# Ant properties
+build_properties.xml
+# it's backup copy for linux
+build_properties.xml~
+# bulid backup file
+build.xml~
+# readme backup file
+readme.txt~

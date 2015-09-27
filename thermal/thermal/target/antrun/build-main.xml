@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <path id="h2.classpath">
+    <path refid="maven.compile.classpath"/>
+  </path>
+  <echo message="########### Creating API Manager Database ##############"/>
+  <path id="jdbc_driver">
+    <pathelement location="./lib/postgresql-9.1-901.jdbc4.jar"/>
+  </path>
+  <sql userid="postgres" driver="org.postgresql.Driver" password="madiken" url="jdbc:postgresql://localhost:5432/PhysDb">
+    <classpath refid="jdbc_driver"/>
+    <transaction src="./scripts/links_patch.sql"/>
+  </sql>
+  <echo message="##################### END ########################"/>
+</target>
+</project>

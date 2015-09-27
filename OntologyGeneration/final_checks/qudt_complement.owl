@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://data.nasa.gov/qudt/owl/qudt#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://thermal#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <owl:Class rdf:about="http://data.nasa.gov/qudt/owl/qudt#ChemistryUnit">
+    <rdfs:label>http://data.nasa.gov/qudt/owl/qudt#ChemistryUnit</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://data.nasa.gov/qudt/owl/qudt#ChemistryQuantityKind">
+    <rdfs:label>http://data.nasa.gov/qudt/owl/qudt#ChemistryQuantityKind</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://data.nasa.gov/qudt/owl/qudt#ThermodynamicsQuantityKind">
+    <rdfs:label>http://data.nasa.gov/qudt/owl/qudt#ThermodynamicsQuantityKind</rdfs:label>
+  </owl:Class>
+  <j.0:ChemistryQuantityKind rdf:about="http://thermal#EnthalpyOfVaporization">
+    <j.0:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >enthalpy of vaporization</j.0:description>
+    <j.0:generalization rdf:resource="http://data.nasa.gov/qudt/owl/quantity#MolarEnergy"/>
+    <rdfs:label>enthalpy of vaporization</rdfs:label>
+  </j.0:ChemistryQuantityKind>
+  <j.0:ChemistryUnit rdf:about="http://thermal#KiloJoulePerMole">
+    <rdfs:label>kJ/mol</rdfs:label>
+    <j.0:abbreviation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >kJ/mol</j.0:abbreviation>
+    <j.0:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >kJ/mol</j.0:symbol>
+    <j.0:quantityKind rdf:resource="http://data.nasa.gov/qudt/owl/quantity#MolarEnergy"/>
+    <j.0:conversionOffset rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >0</j.0:conversionOffset>
+    <j.0:conversionMultiplier rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >1000</j.0:conversionMultiplier>
+  </j.0:ChemistryUnit>
+  <j.0:ThermodynamicsQuantityKind rdf:about="http://thermal#StandardEntropy">
+    <j.0:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >standard entropy</j.0:description>
+    <j.0:generalization rdf:resource="http://data.nasa.gov/qudt/owl/quantity#MolarHeatCapacity"/>
+    <rdfs:label>standard entropy</rdfs:label>
+  </j.0:ThermodynamicsQuantityKind>
+</rdf:RDF>

@@ -1,0 +1,2180 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY terms "http://purl.org/dc/terms/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#"
+     xml:base="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl">
+        <owl:versionInfo rdf:datatype="&xsd;string">Version 0.1</owl:versionInfo>
+        <dc:rights>Copyright (C) 2009  Dr Nico Adams.
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by  the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</dc:rights>
+        <owl:imports rdf:resource="http://www.ifomis.org/bfo/1.1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&terms;description"/>
+    <owl:AnnotationProperty rdf:about="&terms;hasVersion"/>
+    <owl:AnnotationProperty rdf:about="&terms;publisher"/>
+    <owl:AnnotationProperty rdf:about="&terms;modified"/>
+    <owl:AnnotationProperty rdf:about="&skos;note"/>
+    <owl:AnnotationProperty rdf:about="&terms;issued"/>
+    <rdf:Description rdf:about="&dc;rights">
+        <rdfs:label xml:lang="en-us">Rights</rdfs:label>
+        <terms:modified>2008-01-14</terms:modified>
+        <terms:issued>1999-07-02</terms:issued>
+        <skos:note xml:lang="en-us">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <rdfs:comment xml:lang="en-us">Information about rights held in and over the resource.</rdfs:comment>
+        <terms:description xml:lang="en-us">Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.</terms:description>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#rights-006"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
+    <owl:AnnotationProperty rdf:about="&terms;title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasElementType -->
+
+    <owl:ObjectProperty rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasElementType">
+        <rdfs:label xml:lang="en">has element type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasIdentifier -->
+
+    <owl:ObjectProperty rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasIdentifier">
+        <rdfs:label xml:lang="en">has identifier</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasPart">
+        <rdfs:label xml:lang="en">has part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasPrecursorRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasPrecursorRelation">
+        <rdfs:label xml:lang="en">has precursor relation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasRole">
+        <rdfs:label xml:lang="en">has role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#isDerivedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#isDerivedFrom">
+        <rdfs:label xml:lang="en">is derived from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#isPartOf">
+        <rdfs:label xml:lang="en">is part of</rdfs:label>
+        <owl:inverseOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#isPrecursorFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#isPrecursorFor">
+        <rdfs:label xml:lang="en">is precursor for</rdfs:label>
+        <owl:inverseOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#isDerivedFrom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasValue">
+        <rdfs:label xml:lang="en">has value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#preseentInAmount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#preseentInAmount">
+        <rdfs:label xml:lang="en">preseent in amount</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AcidMolecule -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AcidMolecule">
+        <rdfs:label xml:lang="en">Acid molecule</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasRole"/>
+                        <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AcidRole"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BaseMolecule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AcidRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AcidRole">
+        <rdfs:label xml:lang="en">Acid role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AdjuvantRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AdjuvantRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ImmunoModulatingRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_50847"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AetiopathogenRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AetiopathogenRole">
+        <rdfs:label xml:lang="en">Aetiopathogen role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BiologicalRole"/>
+        <rdfs:comment xml:lang="en">Aetiopathogenesis refers to the cause and development of a disease or abnormal condition. An agent which has the aetiopathogen role is the cause of a disease or an abnormal condition.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_52209"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AgonistRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AgonistRole">
+        <rdfs:label xml:lang="en">Agonist role</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&snap;Role"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasRole"/>
+                        <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AgonistRole"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PharmacologicalRole"/>
+        <rdfs:comment xml:lang="en">An agonist is a drug that binds to a receptor of a cell and triggers a response by the cell. An agonist often mimics the action of a naturally occurring substance. The agonist role of a compound or a molecule is the role of acting as an agonist in a certain context.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_48705"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AlkylatingAgentRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AlkylatingAgentRole">
+        <rdfs:label xml:lang="en">Alkylating agent role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MutagenRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AllergenRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AllergenRole">
+        <rdfs:label xml:lang="en">Allergen role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AetiopathogenRole"/>
+        <rdfs:comment xml:lang="en">An allergen is a nonparasitic antigen capable of stimulating a type-I hypersensitivity reaction in atopic individuals. An allergen role is the role of acting as an allergen. Source: http://en.wikipedia.org/wiki/Allergen</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_50904"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AnabolicAgentRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AnabolicAgentRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#HormoneRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_36413"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AnalgesicRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AnalgesicRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PharmacologicalRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_35480"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AndrogenAntagonistRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AndrogenAntagonistRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#HormoneAntagonistRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_35497"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AntagonistRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AntagonistRole">
+        <rdfs:label xml:lang="en">Antagonist role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PharmacologicalRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_48706"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AntiAuxinRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AntiAuxinRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PlantGrowthRegulatingRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_22581"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AntiMineraloCorticoidAntagonistRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AntiMineraloCorticoidAntagonistRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#HormoneAntagonistRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_50843"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AntibacterialRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AntibacterialRole">
+        <rdfs:label xml:lang="en">Antibacterial role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AntimicrobialRole"/>
+        <rdfs:comment xml:lang="en">An antibacterial agent is an agent that inhibits the growth of bacteria or kills bacteria alltogether. An antibacterial role is the role of acting in as an antibacterial.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_33282"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AntibioticRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AntibioticRole">
+        <rdfs:label xml:lang="en">Antibiotic role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AntimicrobialRole"/>
+        <rdfs:comment xml:lang="en">An antibiotic is an agent that inhibits the growth of bacteria or kills bacteria.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_22582"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AntimetaboliteRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AntimetaboliteRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BioChemicalRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_35221"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AntimicrobialRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AntimicrobialRole">
+        <rdfs:label xml:lang="en">Antimicrobial role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BiologicalRole"/>
+        <rdfs:comment xml:lang="en">An antimicrobial is a substance that kills or inhibits the growth of microorganisms such as bacteria, fungi, or protozoans, as well as destroying viruses. Source: http://en.wikipedia.org/wiki/Antimicrobial</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_33281"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AuxinRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AuxinRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PlantGrowthRegulatingRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_22676"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BaseMolecule -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BaseMolecule">
+        <rdfs:label xml:lang="en">Base molecule</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasRole"/>
+                        <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BaseRole"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BaseRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BaseRole">
+        <rdfs:label xml:lang="en">Base role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BioChemicalRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BioChemicalRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BiologicalRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_52206"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BioMarkerMolecule -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BioMarkerMolecule">
+        <rdfs:label xml:lang="en">Bio marker molecule</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasRole"/>
+                        <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BioMarkerRole"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BioMarkerRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BioMarkerRole">
+        <rdfs:label xml:lang="en">Bio marker role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#GrowthRegulatingRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BioPhysicalRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BioPhysicalRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BiologicalRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_52208"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BiologicalPigmentRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BiologicalPigmentRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BioPhysicalRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_26130"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BiologicalRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BiologicalRole">
+        <rdfs:label xml:lang="en">Biological role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_24432"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BruttoFormula -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BruttoFormula">
+        <rdfs:label xml:lang="en">Brutto formula</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#IdentifierToken"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#CASNumber"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#InChI"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#InChIKey"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#JSTSubstanceNumber"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularFormula"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PolyInfoMonomerID"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#RTECS"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SMILES"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BulkChemicalElement -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BulkChemicalElement">
+        <rdfs:label xml:lang="en">Bulk chemical element</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalSpecies"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasPart"/>
+                        <owl:hasValue rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalElement"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PureChemicalSpecies"/>
+        <rdfs:comment xml:lang="en">The term chemical element is polymorphic its precise usage is still being defined.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#CASNumber -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#CASNumber">
+        <rdfs:label xml:lang="en">CASNumber</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#IdentifierToken"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasValue"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#InChI"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#InChIKey"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#JSTSubstanceNumber"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularFormula"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PolyInfoMonomerID"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#RTECS"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SMILES"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#CETPInhibitorRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#CETPInhibitorRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BioChemicalRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_49205"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#CalciumChannelTransportModulatorRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#CalciumChannelTransportModulatorRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MembraneTransportModulatorRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_38808"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#CarcinogenRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#CarcinogenRole">
+        <rdfs:label xml:lang="en">Carcinogen role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AetiopathogenRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_50903"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#CardioToxinRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#CardioToxinRole">
+        <rdfs:label xml:lang="en">Cardio toxin role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AetiopathogenRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_50912"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#CatalystMolecule -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#CatalystMolecule">
+        <rdfs:label xml:lang="en">Catalyst molecule</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasRole"/>
+                        <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#CatalystRole"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#CatalystRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#CatalystRole">
+        <rdfs:label xml:lang="en">Catalyst role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalElement -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalElement">
+        <rdfs:label xml:lang="en">Chemical element</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasElementType"/>
+                <owl:hasValue rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalElementType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalSpecies"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalElementType -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalElementType">
+        <rdfs:label xml:lang="en">Chemical element type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Quality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalIdentifier -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalIdentifier">
+        <rdfs:label xml:lang="en">Chemical identifier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;SpecificallyDependentContinuant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasValue"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A lexical token, that names an entity.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalRole">
+        <rdfs:label xml:lang="en">Chemical role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalSpecies -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalSpecies">
+        <rdfs:label xml:lang="en">Chemical species</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#preseentInAmount"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasPart"/>
+                        <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalSpecies"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasPart"/>
+                        <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasPart"/>
+                        <owl:hasValue rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BulkChemicalElement"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasIdentifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalIdentifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+        <rdfs:comment xml:lang="en">An ensemble of chemically identical molecular entities that can explore the same set of molecular energy levels on the time scale of the experiment.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChitinSynthesisInhibitorRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChitinSynthesisInhibitorRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#InsectGrowthRegulatingRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_23100"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#CofactorRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#CofactorRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BioChemicalRole"/>
+        <rdfs:comment>&lt;http://purl.org/obo/owl/CHEBI#CHEBI_23357&gt;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#DisinfectantRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#DisinfectantRole">
+        <rdfs:label xml:lang="en">Disinfectant role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AntimicrobialRole"/>
+        <rdfs:comment>Disinfectants are antimicrobial agents that are applied to non-living objects to destroy microorganisms, the process of which is known as disinfection. Source: http://en.wikipedia.org/wiki/Disinfectant</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_48219"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#EcdysoneAgonistRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#EcdysoneAgonistRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#InsectGrowthRegulatingRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_38456"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#EcdysoneAntagonistRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#EcdysoneAntagonistRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#InsectGrowthRegulatingRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_23891"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#EffectorRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#EffectorRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BioChemicalRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_35224"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ElectronAcceptorMolecule -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ElectronAcceptorMolecule">
+        <rdfs:label xml:lang="en">Electron acceptor molecule</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasRole"/>
+                        <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ElectronAcceptorRole"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ElectronDonorMolecule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ElectronAcceptorRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ElectronAcceptorRole">
+        <rdfs:label xml:lang="en">Electron acceptor role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ElectronDonorMolecule -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ElectronDonorMolecule">
+        <rdfs:label xml:lang="en">Electron donor molecule</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasRole"/>
+                        <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ElectronDonorRole"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ElectronDonorRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ElectronDonorRole">
+        <rdfs:label xml:lang="en">Electron donor role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ElectrophileMolecule -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ElectrophileMolecule">
+        <rdfs:label xml:lang="en">Electrophile molecule</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasRole"/>
+                        <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ElectrophileRole"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#NucleophileMolecule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ElectrophileRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ElectrophileRole">
+        <rdfs:label xml:lang="en">Electrophile role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#EndothelinAReceptorAntagonistRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#EndothelinAReceptorAntagonistRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#EndothelinReceptorAntagonistRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_51452"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#EndothelinReceptorAntagonistRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#EndothelinReceptorAntagonistRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#HormoneAntagonistRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_51451"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#EnzymeInhibitorRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#EnzymeInhibitorRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BioChemicalRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_23924"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#EnzymeReactivatorRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#EnzymeReactivatorRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BioChemicalRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_50242"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#EstrogenAntagonistRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#EstrogenAntagonistRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#HormoneAntagonistRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_50837"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#EthyleneReleasingRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#EthyleneReleasingRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PlantGrowthRegulatingRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_24002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#FungicidalRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#FungicidalRole">
+        <rdfs:label xml:lang="en">Fungicidal role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AntimicrobialRole"/>
+        <rdfs:comment xml:lang="en">Fungicides are chemical compounds or biological organisms used to kill or inhibit fungi or fungal spores.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_24127"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#GABAGatedChlorideChannelAntagonistRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#GABAGatedChlorideChannelAntagonistRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MembraneTransportModulatorRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_38999"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#GABAModulatorRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#GABAModulatorRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MembraneTransportModulatorRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_50268"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#GenoToxinRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#GenoToxinRole">
+        <rdfs:label xml:lang="en">Geno toxin role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AetiopathogenRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_50902"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#GrowthHormoneRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#GrowthHormoneRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#HormoneRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_37845"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#GrowthRegulatingRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#GrowthRegulatingRole">
+        <rdfs:label xml:lang="en">Growth regulating role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BiologicalRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_39317"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#HepatoToxinRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#HepatoToxinRole">
+        <rdfs:label xml:lang="en">Hepato toxin role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AetiopathogenRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_50908"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#HormoneAgonist -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#HormoneAgonist">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AgonistRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_51060"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#HormoneAntagonistRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#HormoneAntagonistRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AntagonistRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_49020"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#HormoneRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#HormoneRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MessengerRole"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasRole"/>
+                <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AgonistRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_33280"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#INN -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#INN">
+        <rdfs:label xml:lang="en">INN</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#Name"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#IUPACName"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#Synonym"/>
+        <rdfs:comment xml:lang="en">International Nonproprietary Name.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#IUPACName -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#IUPACName">
+        <rdfs:label xml:lang="en">IUPACName</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#Name"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#Synonym"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#IdentifierToken -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#IdentifierToken">
+        <rdfs:label xml:lang="en">Identifier token</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalIdentifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ImmunoModulatingRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ImmunoModulatingRole">
+        <rdfs:label xml:lang="en">Immuno regulating role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BiologicalRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_50846"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ImmunosuppressantRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ImmunosuppressantRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ImmunoModulatingRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_35705"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#InChI -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#InChI">
+        <rdfs:label xml:lang="en">In ch i</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#IdentifierToken"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasValue"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#InChIKey"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#JSTSubstanceNumber"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularFormula"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PolyInfoMonomerID"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#RTECS"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SMILES"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#InChIKey -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#InChIKey">
+        <rdfs:label xml:lang="en">In chi key</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#IdentifierToken"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#JSTSubstanceNumber"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularFormula"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PolyInfoMonomerID"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#RTECS"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SMILES"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#InitiatorRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#InitiatorRole">
+        <rdfs:label xml:lang="en">Initiator role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#InsectAttractantRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#InsectAttractantRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SemioChemicalRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_24850"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#InsectGrowthRegulatingRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#InsectGrowthRegulatingRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#GrowthRegulatingRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_24851"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#IntercalatingAgentRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#IntercalatingAgentRole">
+        <rdfs:label xml:lang="en">Intercalating agent role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MutagenRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#IonTransportInhibitorRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#IonTransportInhibitorRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MembraneTransportModulatorRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_50184"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#IonophoreRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#IonophoreRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MembraneTransportModulatorRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_24869"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#JSTSubstanceNumber -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#JSTSubstanceNumber">
+        <rdfs:label xml:lang="en">JSTSubstance number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#IdentifierToken"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularFormula"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PolyInfoMonomerID"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#RTECS"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SMILES"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#JuvenileHormoneAntagonistRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#JuvenileHormoneAntagonistRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#InsectGrowthRegulatingRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_24941"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#JuvenileHormoneMimicRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#JuvenileHormoneMimicRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#InsectGrowthRegulatingRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_24942"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#LeukotrieneAntagonistRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#LeukotrieneAntagonistRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#HormoneAntagonistRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_49159"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MacroNutrientRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MacroNutrientRole">
+        <rdfs:label xml:lang="en">Macro nutrient role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#NutrientRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MembraneTransportModulatorRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MembraneTransportModulatorRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BioPhysicalRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_38632"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MessengerRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MessengerRole">
+        <rdfs:label xml:lang="en">Messenger role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BiologicalRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_33280"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MetaboliteRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MetaboliteRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BioChemicalRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_25212"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MicroNutrientRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MicroNutrientRole">
+        <rdfs:label xml:lang="en">Micro nutrient role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#NutrientRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MiteGrowthRegulatingRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MiteGrowthRegulatingRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#GrowthRegulatingRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_39316"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MitogenRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MitogenRole">
+        <rdfs:label xml:lang="en">Mitogen role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BiologicalRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_52290"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#Mixture -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#Mixture">
+        <rdfs:label xml:lang="en">Mixture</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalSpecies"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalSpecies"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity">
+        <rdfs:label xml:lang="en">Molecular entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasPrecursorRelation"/>
+                <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PrecursorRelation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasIdentifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalIdentifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity. Molecular entity is used in this Compendium as a general term for singular entities, irrespective of their nature, while chemical species stands for sets or ensembles of molecular entities. Note that the name of a compound may refer to the respective molecular entity or to the chemical species, e.g. methane, may mean a single molecule of CH4 (molecular entity) or a molar amount, specified or not (chemical species), participating in a reaction.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntityFragment -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntityFragment">
+        <rdfs:label xml:lang="en">molecular entity fragment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;FiatObjectPart"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A molecular entity fragment is a molecular fragment such as a functional group, a repeat unit etc...</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularFormula -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularFormula">
+        <rdfs:label xml:lang="en">Molecular formula</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#IdentifierToken"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PolyInfoMonomerID"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#RTECS"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SMILES"/>
+        <rdfs:comment xml:lang="en">A formula according with the relative molecular mass (or the structure).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MutagenRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MutagenRole">
+        <rdfs:label xml:lang="en">Mutagen role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AetiopathogenRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MycoToxinRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MycoToxinRole">
+        <rdfs:label xml:lang="en">Myco toxin role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ToxinRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_25442"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#Name -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#Name">
+        <rdfs:label xml:lang="en">Name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalIdentifier"/>
+        <rdfs:comment xml:lang="en">The name given to a chemical or molecular entity.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#NamedChemicalSpecies -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#NamedChemicalSpecies">
+        <rdfs:label xml:lang="en">Named chemical species</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalSpecies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#NamedMolecularEntity -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#NamedMolecularEntity">
+        <rdfs:label xml:lang="en">Named molecular entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#NephrotoxinRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#NephrotoxinRole">
+        <rdfs:label xml:lang="en">Nephrotoxin role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AetiopathogenRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#NeuroToxinRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#NeuroToxinRole">
+        <rdfs:label xml:lang="en">Neuro toxin role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AetiopathogenRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#NeurotransmitterRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#NeurotransmitterRole">
+        <rdfs:label xml:lang="en">Neurotransmitter role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MessengerRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_25512"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#NodulationFactorRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#NodulationFactorRole">
+        <rdfs:label xml:lang="en">Nodulation factor role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BiologicalRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_25573"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#NonNarcoticAnalgesicRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#NonNarcoticAnalgesicRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AnalgesicRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_35481"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#NucleofugeRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#NucleofugeRole">
+        <rdfs:label xml:lang="en">Nucleofuge role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#NucleophileMolecule -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#NucleophileMolecule">
+        <rdfs:label xml:lang="en">Nucleophile molecule</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasRole"/>
+                        <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#NucleophileRole"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#NucleophileRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#NucleophileRole">
+        <rdfs:label xml:lang="en">Nucleophile role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#NutrientRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#NutrientRole">
+        <rdfs:label xml:lang="en">Nutrient role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PhysiologicalRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ObjectRelation -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ObjectRelation">
+        <rdfs:subClassOf rdf:resource="&snap;SpecificallyDependentContinuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#OsmolyticRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#OsmolyticRole">
+        <rdfs:label xml:lang="en">Object relation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BiologicalRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_25728"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PharmacologicalRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PharmacologicalRole">
+        <rdfs:label xml:lang="en">Pharmacological role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BiologicalRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_52210"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PheromoneRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PheromoneRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SemioChemicalRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_26013"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PhotobiochemicalRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PhotobiochemicalRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BioChemicalRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_52216"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PhysiologicalRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PhysiologicalRole">
+        <rdfs:label xml:lang="en">Physiological role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BiologicalRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PhytoHormoneRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PhytoHormoneRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#HormoneRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_26158"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PhytoToxinRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PhytoToxinRole">
+        <rdfs:label rdf:datatype="&xsd;string">Phytotoxin role {@en}</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ToxinRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_38231"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PlantGrowthHormoneRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PlantGrowthHormoneRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#GrowthHormoneRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_37848"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PlantGrowthRegulatingRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PlantGrowthRegulatingRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#GrowthRegulatingRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_26155"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PlantGrowthRetardantRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PlantGrowthRetardantRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PlantGrowthRegulatingRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_35219"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PlantGrowthStimulatingRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PlantGrowthStimulatingRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PlantGrowthRegulatingRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_26157"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PlateletGlycoProteinReceptorAntagonist -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PlateletGlycoProteinReceptorAntagonist">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AntagonistRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_49023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PolyInfoMonomerID -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PolyInfoMonomerID">
+        <rdfs:label xml:lang="en">Poly info monomer ID</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#IdentifierToken"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasValue"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#RTECS"/>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SMILES"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PotassiumChannelModulatorRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PotassiumChannelModulatorRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MembraneTransportModulatorRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_50510"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PrecursorRelation -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PrecursorRelation">
+        <rdfs:label xml:lang="en">Precursor relation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ObjectRelation"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#isPrecursorFor"/>
+                        <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalSpecies"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#isPrecursorFor"/>
+                        <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PreferredName -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PreferredName">
+        <rdfs:label xml:lang="en">Preferred name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#Name"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ProVitaminRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ProVitaminRole">
+        <rdfs:label xml:lang="en">Pro vitamin role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BiologicalRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ProductMolecule -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ProductMolecule">
+        <rdfs:label xml:lang="en">Product molecule</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasRole"/>
+                        <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ProductRole"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ProductRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ProductRole">
+        <rdfs:label xml:lang="en">Product role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ProstaglandinAntagonistRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ProstaglandinAntagonistRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#HormoneAntagonistRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_49023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PureChemicalSpecies -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PureChemicalSpecies">
+        <rdfs:label xml:lang="en">Pure chemical species</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalSpecies"/>
+        <rdfs:comment>Needs to be axiomatised and differentiated from mixtures</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#RTECS -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#RTECS">
+        <rdfs:label xml:lang="en">RTECS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#IdentifierToken"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasValue"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SMILES"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ReactantMolecule -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ReactantMolecule">
+        <rdfs:label xml:lang="en">Reactant molecule</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasRole"/>
+                        <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ReactantRole"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ReactantRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ReactantRole">
+        <rdfs:label xml:lang="en">Reactant role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ReagentMolecule -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ReagentMolecule">
+        <rdfs:label xml:lang="en">Reagent molecule</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasRole"/>
+                        <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ReagentRole"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ReagentRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ReagentRole">
+        <rdfs:label xml:lang="en">Reagent role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#RetinoicAcidReceptorAlphaBetaAgonist -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#RetinoicAcidReceptorAlphaBetaAgonist">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AgonistRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_50741"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SMILES -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SMILES">
+        <rdfs:label xml:lang="en">SMILES</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#IdentifierToken"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasValue"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SemioChemicalRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SemioChemicalRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MessengerRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_26645"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SexHormoneRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SexHormoneRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#HormoneRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_50112"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SodiumChannelModulatorRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SodiumChannelModulatorRole">
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MembraneTransportModulatorRole"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_39000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#Solute -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#Solute">
+        <rdfs:label xml:lang="en">Solute</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalSpecies"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasRole"/>
+                        <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SoluteRole"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalSpecies"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SoluteMolecule"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SoluteMolecule -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SoluteMolecule">
+        <rdfs:label xml:lang="en">Solute molecule</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasRole"/>
+                        <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SoluteRole"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#MolecularEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SoluteRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SoluteRole">
+        <rdfs:label xml:lang="en">Solute role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#Solution -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#Solution">
+        <rdfs:label xml:lang="en">Solution</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalSpecies"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasPart"/>
+                        <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#Solute"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasPart"/>
+                        <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#Solvent"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalSpecies"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#Solvent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#Solute"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#Solvent -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#Solvent">
+        <rdfs:label xml:lang="en">Solvent</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalSpecies"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#hasRole"/>
+                        <owl:someValuesFrom rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SolventRole"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalSpecies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SolventRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#SolventRole">
+        <rdfs:label xml:lang="en">Solvent role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#Synonym -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#Synonym">
+        <rdfs:label xml:lang="en">Synonym</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#Name"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#TeratogenRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#TeratogenRole">
+        <rdfs:label xml:lang="en">Teratogen role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#AetiopathogenRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#TerminatorRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#TerminatorRole">
+        <rdfs:label xml:lang="en">Terminator role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ToxinRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ToxinRole">
+        <rdfs:label xml:lang="en">Toxin role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BiologicalRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#TrivialName -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#TrivialName">
+        <rdfs:label xml:lang="en">Trivial name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#Name"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#VitaminRole -->
+
+    <owl:Class rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#VitaminRole">
+        <rdfs:label xml:lang="en">Vitamin role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#PhysiologicalRole"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BulkChemicalElement -->
+
+    <rdf:Description rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#BulkChemicalElement">
+        <rdfs:label xml:lang="en">Bulk chemical element</rdfs:label>
+        <rdfs:comment xml:lang="en">The term chemical element is polymorphic its precise usage is still being defined.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalElement -->
+
+    <rdf:Description rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalElement">
+        <rdfs:label xml:lang="en">Chemical element</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalElementType -->
+
+    <rdf:Description rdf:about="http://www.polymerinformatics.com/ChemAxiom/ChemDomain.owl#ChemicalElementType">
+        <rdfs:label xml:lang="en">Chemical element type</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&dc;format">
+        <rdfs:label xml:lang="en-us">Format</rdfs:label>
+        <terms:modified>2008-01-14</terms:modified>
+        <terms:issued>1999-07-02</terms:issued>
+        <skos:note xml:lang="en-us">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <terms:description xml:lang="en-us">Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME].</terms:description>
+        <rdfs:comment xml:lang="en-us">The file format, physical medium, or dimensions of the resource.</rdfs:comment>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#format-007"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&dc;creator">
+        <rdfs:label xml:lang="en-us">Creator</rdfs:label>
+        <terms:issued>1999-07-02</terms:issued>
+        <terms:modified>2008-01-14</terms:modified>
+        <skos:note xml:lang="en-us">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <rdfs:comment xml:lang="en-us">An entity primarily responsible for making the resource.</rdfs:comment>
+        <terms:description xml:lang="en-us">Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity.</terms:description>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#creator-006"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&dc;description">
+        <rdfs:label xml:lang="en-us">Description</rdfs:label>
+        <terms:modified>2008-01-14</terms:modified>
+        <terms:issued>1999-07-02</terms:issued>
+        <skos:note xml:lang="en-us">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <rdfs:comment xml:lang="en-us">An account of the resource.</rdfs:comment>
+        <terms:description xml:lang="en-us">Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</terms:description>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#description-006"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&dc;contributor">
+        <rdfs:label xml:lang="en-us">Contributor</rdfs:label>
+        <terms:issued>1999-07-02</terms:issued>
+        <terms:modified>2008-01-14</terms:modified>
+        <skos:note xml:lang="en-us">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <rdfs:comment xml:lang="en-us">An entity responsible for making contributions to the resource.</rdfs:comment>
+        <terms:description xml:lang="en-us">Examples of a Contributor include a person, an organization, or a service. Typically, the name of a Contributor should be used to indicate the entity.</terms:description>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#contributor-006"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&dc;language">
+        <rdfs:label xml:lang="en-us">Language</rdfs:label>
+        <terms:issued>1999-07-02</terms:issued>
+        <terms:modified>2008-01-14</terms:modified>
+        <rdfs:comment xml:lang="en-us">A language of the resource.</rdfs:comment>
+        <skos:note xml:lang="en-us">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <terms:description xml:lang="en-us">Recommended best practice is to use a controlled vocabulary such as RFC 4646 [RFC4646].</terms:description>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#language-007"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:seeAlso rdf:resource="http://www.ietf.org/rfc/rfc4646.txt"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&dc;identifier">
+        <rdfs:label xml:lang="en-us">Identifier</rdfs:label>
+        <terms:modified>2008-01-14</terms:modified>
+        <terms:issued>1999-07-02</terms:issued>
+        <skos:note xml:lang="en-us">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <rdfs:comment xml:lang="en-us">An unambiguous reference to the resource within a given context.</rdfs:comment>
+        <terms:description xml:lang="en-us">Recommended best practice is to identify the resource by means of a string conforming to a formal identification system. </terms:description>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#identifier-006"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/">
+        <terms:modified>2010-10-11</terms:modified>
+        <terms:title xml:lang="en-us">Dublin Core Metadata Element Set, Version 1.1</terms:title>
+        <terms:publisher rdf:resource="http://purl.org/dc/aboutdcmi#DCMI"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&dc;publisher">
+        <rdfs:label xml:lang="en-us">Publisher</rdfs:label>
+        <terms:issued>1999-07-02</terms:issued>
+        <terms:modified>2008-01-14</terms:modified>
+        <skos:note xml:lang="en-us">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <rdfs:comment xml:lang="en-us">An entity responsible for making the resource available.</rdfs:comment>
+        <terms:description xml:lang="en-us">Examples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity.</terms:description>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#publisher-006"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&dc;source">
+        <rdfs:label xml:lang="en-us">Source</rdfs:label>
+        <terms:issued>1999-07-02</terms:issued>
+        <terms:modified>2008-01-14</terms:modified>
+        <rdfs:comment xml:lang="en-us">A related resource from which the described resource is derived.</rdfs:comment>
+        <skos:note xml:lang="en-us">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <terms:description xml:lang="en-us">The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system.</terms:description>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#source-006"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&dc;coverage">
+        <rdfs:label xml:lang="en-us">Coverage</rdfs:label>
+        <terms:modified>2008-01-14</terms:modified>
+        <terms:issued>1999-07-02</terms:issued>
+        <skos:note xml:lang="en-us">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <terms:description xml:lang="en-us">Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended best practice is to use a controlled vocabulary such as the Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges.</terms:description>
+        <rdfs:comment xml:lang="en-us">The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant.</rdfs:comment>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#coverage-006"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&dc;subject">
+        <rdfs:label xml:lang="en-us">Subject</rdfs:label>
+        <terms:modified>2008-01-14</terms:modified>
+        <terms:issued>1999-07-02</terms:issued>
+        <skos:note xml:lang="en-us">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <rdfs:comment xml:lang="en-us">The topic of the resource.</rdfs:comment>
+        <terms:description xml:lang="en-us">Typically, the subject will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary. To describe the spatial or temporal topic of the resource, use the Coverage element.</terms:description>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#subject-006"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&dc;type">
+        <rdfs:label xml:lang="en-us">Type</rdfs:label>
+        <terms:modified>2008-01-14</terms:modified>
+        <terms:issued>1999-07-02</terms:issued>
+        <skos:note xml:lang="en-us">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <terms:description xml:lang="en-us">Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element.</terms:description>
+        <rdfs:comment xml:lang="en-us">The nature or genre of the resource.</rdfs:comment>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#type-006"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&dc;date">
+        <rdfs:label xml:lang="en-us">Date</rdfs:label>
+        <terms:issued>1999-07-02</terms:issued>
+        <terms:modified>2008-01-14</terms:modified>
+        <rdfs:comment xml:lang="en-us">A point or period of time associated with an event in the lifecycle of the resource.</rdfs:comment>
+        <skos:note xml:lang="en-us">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <terms:description xml:lang="en-us">Date may be used to express temporal information at any level of granularity.  Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 [W3CDTF].</terms:description>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#date-006"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&dc;relation">
+        <rdfs:label xml:lang="en-us">Relation</rdfs:label>
+        <terms:modified>2008-01-14</terms:modified>
+        <terms:issued>1999-07-02</terms:issued>
+        <rdfs:comment xml:lang="en-us">A related resource.</rdfs:comment>
+        <skos:note xml:lang="en-us">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <terms:description xml:lang="en-us">Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system. </terms:description>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#relation-006"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&dc;title">
+        <rdfs:label xml:lang="en-us">Title</rdfs:label>
+        <terms:issued>1999-07-02</terms:issued>
+        <terms:modified>2008-01-14</terms:modified>
+        <rdfs:comment xml:lang="en-us">A name given to the resource.</rdfs:comment>
+        <skos:note xml:lang="en-us">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#title-006"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1799) http://owlapi.sourceforge.net -->

@@ -1,0 +1,47 @@
+<http://localhost:2020/Property/37> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.nasa.gov/qudt/owl/qudt#QuantityKind> .
+<http://localhost:2020/Property/37> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#Property> .
+<http://localhost:2020/Property/42> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.nasa.gov/qudt/owl/qudt#QuantityKind> .
+<http://localhost:2020/Property/42> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#Property> .
+
+<http://localhost:2020/Data/61> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#Data> .
+<http://localhost:2020/Data/61> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.nasa.gov/qudt/owl/qudt#Quantity> .
+<http://localhost:2020/Data/62> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#Data> .
+<http://localhost:2020/Data/62> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.nasa.gov/qudt/owl/qudt#Quantity> .
+<http://localhost:2020/Data/60> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#Data> .
+<http://localhost:2020/Data/60> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.nasa.gov/qudt/owl/qudt#Quantity> .
+
+<http://localhost:2020/Property/37> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#GasProperty> .
+<http://localhost:2020/Property/42> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#NotGasProperty> .
+<http://localhost:2020/Property/37> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#NotIdealGasProperty> .
+<http://localhost:2020/Property/42> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#NotIdealGasProperty> .
+<http://localhost:2020/Property/37> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#NotSolidProperty> .
+<http://localhost:2020/Property/42> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#NotSolidProperty> .
+<http://localhost:2020/Property/37> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#LiquidProperty> .
+<http://localhost:2020/Property/42> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#NotLiquidProperty> .
+<http://localhost:2020/Property/37> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#NotSolidProperty> .
+<http://localhost:2020/Property/42> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#NotSolidProperty> .
+<http://localhost:2020/Property/37> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#NotLiquidSolidProperty> .
+<http://localhost:2020/Property/42> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#NotLiquidSolidProperty> .
+<http://localhost:2020/Property/42> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#LiquidGasProperty> .
+<http://localhost:2020/Property/37> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#NotLiquidGasProperty> .
+<http://localhost:2020/Property/37> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#NotSolidGasProperty> .
+<http://localhost:2020/Property/42> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#NotSolidGasProperty> .
+
+
+
+<http://localhost:2020/Data/60> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#LiquidData> .
+<http://localhost:2020/Data/60> <http://data.nasa.gov/qudt/owl/qudt#quantityKind> <http://localhost:2020/Property/37> .
+
+<http://localhost:2020/Data/61> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#GasData> .
+<http://localhost:2020/Data/61> <http://data.nasa.gov/qudt/owl/qudt#quantityKind> <http://localhost:2020/Property/37> .
+
+<http://localhost:2020/Data/62> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#LiquidGasData> .
+<http://localhost:2020/Data/62> <http://data.nasa.gov/qudt/owl/qudt#quantityKind> <http://localhost:2020/Property/42> .
+
+
+<http://localhost:2020/Dataset/56> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umeta.ru/namespaces/thermal#LiquidGasDataset> .
+<http://localhost:2020/Dataset/56> <http://umeta.ru/namespaces/thermal#data> <http://localhost:2020/Data/60> .
+<http://localhost:2020/Dataset/56> <http://umeta.ru/namespaces/thermal#data> <http://localhost:2020/Data/61> .
+<http://localhost:2020/Dataset/56> <http://umeta.ru/namespaces/thermal#data> <http://localhost:2020/Data/62> .
+
+
